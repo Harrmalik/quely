@@ -1,0 +1,38 @@
+{
+  "name": "quely",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "pm2 start npm --name quely -- run dev",
+    "dev": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "build": "./node_modules/webpack/bin/webpack.js --mode=production"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "lodash": "^4.17.4",
+    "match-sorter": "^2.2.0",
+    "moment": "^2.17.1",
+    "numeral": "^2.0.6",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-handsontable": "^0.3.1",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-table": "^6.7.6",
+    "redux": "^3.7.2",
+    "style-loader": "^0.23.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "react-hot-loader": "^4.12.15",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.8.2"
+  }
+}
